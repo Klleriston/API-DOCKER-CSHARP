@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Migrations\\20240425190851_v1MovieNet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Migrations\\20240425190851_v1MovieNet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\data\\imovierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\data\\imovierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\dto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\dto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\dto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\dto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\data\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\data\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\data\\movienetcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\data\\movienetcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|c:\\users\\klleriston_calriz\\dev\\movienet\\backend\\api\\src\\data\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17AB251-5668-4902-8C5A-3F10F4E51DB1}|src\\src.csproj|solutionrelative:src\\data\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240425190851_v1MovieNet.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Migrations\\20240425190851_v1MovieNet.cs",
+              "RelativeDocumentMoniker": "src\\Migrations\\20240425190851_v1MovieNet.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Migrations\\20240425190851_v1MovieNet.cs",
+              "RelativeToolTip": "src\\Migrations\\20240425190851_v1MovieNet.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAQwD8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T19:08:52.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\appsettings.json",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\appsettings.json",
+              "RelativeToolTip": "src\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-25T18:59:14.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JWTservice.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Services\\JWTservice.cs",
+              "RelativeDocumentMoniker": "src\\Services\\JWTservice.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Services\\JWTservice.cs",
+              "RelativeToolTip": "src\\Services\\JWTservice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:57:36.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\DTO\\UserRegisterDTO.cs",
+              "RelativeDocumentMoniker": "src\\DTO\\UserRegisterDTO.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\DTO\\UserRegisterDTO.cs",
+              "RelativeToolTip": "src\\DTO\\UserRegisterDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:56:35.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserLoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\DTO\\UserLoginDTO.cs",
+              "RelativeDocumentMoniker": "src\\DTO\\UserLoginDTO.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\DTO\\UserLoginDTO.cs",
+              "RelativeToolTip": "src\\DTO\\UserLoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:56:10Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Models\\User.cs",
+              "RelativeDocumentMoniker": "src\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Models\\User.cs",
+              "RelativeToolTip": "src\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:15:24.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\UserRepository.cs",
+              "RelativeDocumentMoniker": "src\\Data\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\UserRepository.cs",
+              "RelativeToolTip": "src\\Data\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:42:23.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Program.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Program.cs",
+              "RelativeToolTip": "src\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:10:16.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MovieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\MovieRepository.cs",
+              "RelativeDocumentMoniker": "src\\Data\\MovieRepository.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\MovieRepository.cs",
+              "RelativeToolTip": "src\\Data\\MovieRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:50:38.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMovieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\IMovieRepository.cs",
+              "RelativeDocumentMoniker": "src\\Data\\IMovieRepository.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\IMovieRepository.cs",
+              "RelativeToolTip": "src\\Data\\IMovieRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:37:52.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\Data\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\IUserRepository.cs",
+              "RelativeToolTip": "src\\Data\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:36:40.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MovieNetContext.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\MovieNetContext.cs",
+              "RelativeDocumentMoniker": "src\\Data\\MovieNetContext.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Data\\MovieNetContext.cs",
+              "RelativeToolTip": "src\\Data\\MovieNetContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:33:19.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "src\\Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\klleriston_calriz\\Dev\\MovieNET\\Backend\\api\\src\\Models\\Movie.cs",
+              "RelativeToolTip": "src\\Models\\Movie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T18:16:53.047Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
