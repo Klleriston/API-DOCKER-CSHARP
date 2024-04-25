@@ -12,7 +12,6 @@ C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\src.dep
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\src.runtimeconfig.json
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\src.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\src.pdb
-C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\JWT.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -24,7 +23,6 @@ C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microso
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Npgsql.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -112,3 +110,9 @@ C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\ru\Micr
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microsoft.Bcl.HashCode.dll
+C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\klleriston_calriz\Dev\MovieNET\Backend\api\src\obj\Debug\net8.0\src.sourcelink.json

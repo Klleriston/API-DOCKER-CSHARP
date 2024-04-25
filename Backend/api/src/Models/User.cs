@@ -11,7 +11,7 @@ namespace src.Models
         public string Password { get; set; }
         public string PhoneNumber { get; set; }
         public string Photo { get; set; }
-        public virtual required ICollection<Movie> Movie { get; set; }
+        public virtual ICollection<Movie> Movie { get; set; }
 
     }
 }
