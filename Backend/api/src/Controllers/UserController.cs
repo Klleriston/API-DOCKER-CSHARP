@@ -8,12 +8,12 @@ namespace api.Controllers
 {
     [ApiController]
     [Route("/")]
-    public class AuthController : Controller
+    public class UserController : Controller
     {
         private readonly IUserRepository _userRepository;
         private readonly JWTservice _jwtService;
 
-        public AuthController(IUserRepository userRepository, JWTservice jwtServices)
+        public UserController(IUserRepository userRepository, JWTservice jwtServices)
         {
             _userRepository = userRepository;
             _jwtService = jwtServices;
