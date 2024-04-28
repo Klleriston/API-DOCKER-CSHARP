@@ -9,8 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<MovieNetContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("connection")));
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<MovieRepository>();
 builder.Services.AddScoped<JWTservice>();
 builder.Services.AddSwaggerGen();
 
