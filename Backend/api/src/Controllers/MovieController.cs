@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using src.Data;
 using src.Models;
@@ -10,74 +11,66 @@ namespace src.Controllers
     public class MovieController : Controller
     {
         private readonly MovieNetContext _movieNetContext;
+        private readonly MovieRepository _movieRepository;
 
-        public MovieController(MovieNetContext movieNetContext)
+        public MovieController(MovieNetContext movieNetContext, MovieRepository movieRepository)
         {
+            _movieRepository = movieRepository;
             _movieNetContext = movieNetContext;
         }
 
         [HttpPost("/movie/create")]
-        public async Task<IActionResult> createMovie([FromBody] Movie movie)
+        public IActionResult createMovie([FromBody] Movie movie)
         {
             if (movie == null)
             {
                 return BadRequest("corpo ta invalido tlg");
             }
 
-            try
-            {
-                _movieRepository.Create(movie);
-                await _movieNetContext.SaveChangesAsync();
-
-                return CreatedAtAction(nameof(GetMovieById), new { id = movie.Id }, new { success = true, data = movie });
-            }
-            catch (Exception)
-            {
-                return StatusCode(500, "ops falha aqui :p");
-            }
+            _movieRepository.Create(movie);
+            return CreatedAtAction(nameof(GetMovieById), new { id = movie.Id }, movie);
         }
 
         [HttpGet("/movie/{id}")]
         public IActionResult GetMovieById(int id)
         {
             var movie = _movieRepository.GetMovieById(id);
+            if (movie == null) 
+            {
+                return BadRequest("ih deu ruim ai kkkk");
+            }
             return Ok(movie);
         }
 
         [HttpGet("/movie")]
-        public async Task<IActionResult> GetMovies()
+        public IActionResult GetMovies()
         {
-            var movies = await _movieNetContext.Movies.ToListAsync();
+            IEnumerable<Movie> movies = _movieRepository.GetAllMovies();
+            if (movies == null) 
+            {
+                return NoContent();
+            }
             return Ok(movies);
         }
 
         [HttpPut("/movie/update/{id}")]
-        public async Task<IActionResult> UpdatedMovie([FromBody] Movie movie, int id)
+        public ActionResult UpdatedMovie([FromBody] Movie movie, int id)
         {
-            if (movie == null) 
+            if (movie == null || id == movie.Id) 
             {
                 return BadRequest("Mandou errado de novo mano ?");
             }
 
-            try
-            {
-                var updatedMovie = _movieRepository.GetMovieById(id);
-
-                updatedMovie.Title = movie.Title;
-                updatedMovie.Description = movie.Description;
-                updatedMovie.Year = movie.Year;
-
-                _movieNetContext.Update(updatedMovie);
-                await _movieNetContext.SaveChangesAsync();
-
-                return Ok("Filme atualizado !!");
-            }
-            catch (Exception)
-            {
-                return BadRequest("Deu ruim no update xD");
-            }
+            _movieNetContext.Update(movie);
+            return Ok("Atualização feita com sucesso capitao broxa");
         }
 
+        [HttpDelete("/movie/delete/{id}")]
+        public ActionResult DeleteMovie(int id)
+        {
+            _movieRepository.DeleteMovie(id);
+            return Ok("Excluido !!");
+        }
     
     }
 }
