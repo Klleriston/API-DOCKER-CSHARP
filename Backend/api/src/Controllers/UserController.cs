@@ -57,7 +57,7 @@ namespace api.Controllers
         }
 
         [HttpGet("user")]
-        public IActionResult User()
+        public IActionResult UserC()
         {
             try
             {
@@ -70,11 +70,11 @@ namespace api.Controllers
 
                 return Ok(user);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return Unauthorized(new
                 {
-                    message = "Sem autorização"
+                    message = "Te falta autorização"
                 });
             }
         }
@@ -86,7 +86,7 @@ namespace api.Controllers
 
             return Ok(new
             {
-                message = "Você saiu"
+                message = "Saiu de boa"
             });
         }
     }
