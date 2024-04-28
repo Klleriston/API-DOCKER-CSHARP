@@ -5,12 +5,15 @@ namespace src.Data
     public class MovieRepository
     {
         private readonly MovieNetContext _movieNetContext;
-        
         public MovieRepository(MovieNetContext movieNetContext)
         {
             _movieNetContext = movieNetContext;
         }
-     
+
+        public ICollection<Movie> GetAllMovies()
+        {
+            return _movieNetContext.Movies.ToList();
+        }
         public void Create(Movie movie)
         {
            _movieNetContext.Movies.Add(movie);
@@ -39,7 +42,7 @@ namespace src.Data
             _movieNetContext.Update(updatedMovie);
             _movieNetContext.SaveChanges();
         }
-         public void DeleteMovie(Guid id)
+         public void DeleteMovie(int id)
         {
             var movie = _movieNetContext.Movies.Find(id);
             if (movie != null)
