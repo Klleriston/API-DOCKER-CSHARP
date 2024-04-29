@@ -9,9 +9,9 @@
 - Deploy -> GCP
 - Organização e planejamento -> Trello
 
-## Esquema do projeto em periodo atual:
+## Esquema do projeto no periodo atual:
 
- ![Esquema](Assets\TrelloReadme.png)
+ ![Esquema](Assets/TrelloReadme.png)
 ## Link do deploy:
 - OFF 😢
 
