@@ -21,6 +21,12 @@ namespace api.Controllers
             _rateService = rateService;
         }
 
+        [HttpGet("/home")]
+        public String Home()
+        {
+            return "Olá";
+        }	
+
 
         [HttpGet("user")]
         public IActionResult GetLoggedInUser()
