@@ -11,7 +11,7 @@
 
 ## Esquema do projeto em periodo atual:
 
- ![Esquema](Assets\TrelloReadme.png)
+ ![Esquema](Assets/TrelloReadme.png)
 ## Link do deploy:
 - OFF 😢
 
