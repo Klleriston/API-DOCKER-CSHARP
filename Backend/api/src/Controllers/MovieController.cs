@@ -7,70 +7,69 @@ using src.Models;
 namespace src.Controllers
 {
     [ApiController]
-    [Route("/")]
-    public class MovieController : Controller
+    [Route("api/[controller]")]
+    public class MovieController : ControllerBase
     {
         private readonly MovieNetContext _movieNetContext;
-        private readonly MovieRepository _movieRepository;
+        private readonly MovieService _movieService;
 
-        public MovieController(MovieNetContext movieNetContext, MovieRepository movieRepository)
+        public MovieController(MovieNetContext movieNetContext, MovieService movieService)
         {
-            _movieRepository = movieRepository;
             _movieNetContext = movieNetContext;
+            _movieService = movieService;
         }
 
-        [HttpPost("/movie/create")]
-        public IActionResult createMovie([FromBody] Movie movie)
+        [HttpPost("create")]
+        public IActionResult CreateMovie([FromBody] Movie movie)
         {
             if (movie == null)
             {
-                return BadRequest("corpo ta invalido tlg");
+                return BadRequest("Invalid request body.");
             }
 
-            _movieRepository.Create(movie);
+            _movieService.Create(movie);
             return CreatedAtAction(nameof(GetMovieById), new { id = movie.Id }, movie);
         }
 
-        [HttpGet("/movie/{id}")]
+        [HttpGet("movie/{id}")]
         public IActionResult GetMovieById(int id)
         {
-            var movie = _movieRepository.GetMovieById(id);
-            if (movie == null) 
+            var movie = _movieService.GetMovieById(id);
+            if (movie == null)
             {
-                return BadRequest("ih deu ruim ai kkkk");
+                return NotFound("Movie not found.");
             }
             return Ok(movie);
         }
 
-        [HttpGet("/movie")]
+        [HttpGet("movie")]
         public IActionResult GetMovies()
         {
-            IEnumerable<Movie> movies = _movieRepository.GetAllMovies();
-            if (movies == null) 
+            IEnumerable<Movie> movies = _movieService.GetAllMovies();
+            if (movies == null || !movies.Any())
             {
                 return NoContent();
             }
             return Ok(movies);
         }
 
-        [HttpPut("/movie/update/{id}")]
-        public ActionResult UpdatedMovie([FromBody] Movie movie, int id)
+        [HttpPut("movie/update/{id}")]
+        public ActionResult UpdateMovie(int id, [FromBody] Movie movie)
         {
-            if (movie == null || id == movie.Id) 
+            if (movie == null || id != movie.Id)
             {
-                return BadRequest("Mandou errado de novo mano ?");
+                return BadRequest("Invalid request body or ID.");
             }
 
-            _movieNetContext.Update(movie);
-            return Ok("Atualização feita com sucesso capitao broxa");
+            _movieService.UpdateMovie(movie);
+            return Ok("Movie updated successfully.");
         }
 
-        [HttpDelete("/movie/delete/{id}")]
+        [HttpDelete("movie/delete/{id}")]
         public ActionResult DeleteMovie(int id)
         {
-            _movieRepository.DeleteMovie(id);
-            return Ok("Excluido !!");
+            _movieService.DeleteMovie(id);
+            return Ok("Movie deleted successfully.");
         }
-    
     }
 }

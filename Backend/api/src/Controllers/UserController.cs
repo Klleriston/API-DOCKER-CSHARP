@@ -12,82 +12,156 @@ namespace api.Controllers
     {
         private readonly IUserRepository _userRepository;
         private readonly JWTservice _jwtService;
+        private readonly RateService _rateService;
 
-        public UserController(IUserRepository userRepository, JWTservice jwtServices)
+        public UserController(IUserRepository userRepository, JWTservice jwtServices, RateService rateService)
         {
             _userRepository = userRepository;
             _jwtService = jwtServices;
+            _rateService = rateService;
         }
 
-        [HttpPost("/register")]
-        public IActionResult Register(UserRegisterDTO dTO)
-        {
-            var user = new User
-            {
-                Name = dTO.Name,
-                Email = dTO.Email,
-                Password = BCrypt.Net.BCrypt.HashPassword(dTO.Password)
-            };
-            return Created("Sucesso !", _userRepository.Create(user));
-        }
-
-        [HttpPost("/login")]
-        public IActionResult Login(UserLoginDTO loginDTO)
-        {
-            var user = _userRepository.GetUserByEmail(loginDTO.Email);
-
-            if (user == null || !BCrypt.Net.BCrypt.Verify(
-                loginDTO.Password, user.Password
-                ))
-                return BadRequest(new
-                {
-                    message = "Credenciais Invalidas!"
-                });
-
-            var jwt = _jwtService.Generate(user.Id);
-            Response.Cookies.Append("jwt", jwt, new CookieOptions
-            {
-                HttpOnly = true
-            });
-
-            return Ok(new
-            {
-                message = "Sucesso !"
-            });
-        }
 
         [HttpGet("user")]
-        public IActionResult UserC()
+        public IActionResult GetLoggedInUser()
+        {
+            try
+            {
+                var jwt = Request.Cookies["jwt"];
+                if (string.IsNullOrEmpty(jwt))
+                {
+                    return Unauthorized(new { message = "JWT token not provided." });
+                }
+
+                var token = _jwtService.Verify(jwt);
+                int userId = int.Parse(token.Issuer);
+
+                var user = _userRepository.GetUserById(userId);
+
+                if (user == null)
+                {
+                    return NotFound("User not found.");
+                }
+
+                return Ok(user);
+            }
+            catch (Exception)
+            {
+                return Unauthorized(new { message = "Authorization failed!" });
+            }
+        }
+
+
+        [HttpGet("users")]
+        public IActionResult GetRegisteredUsers()
+        {
+            var users = _userRepository.GetAllUsers();
+            return Ok(users);
+        }
+
+        [HttpGet("user/movies")]
+        public IActionResult GetMoviesEvaluatedByUser()
         {
             try
             {
                 var jwt = Request.Cookies["jwt"];
 
                 var token = _jwtService.Verify(jwt);
-                int userID = int.Parse(token.Issuer);
+                int userId = int.Parse(token.Issuer);
 
-                var user = _userRepository.GetUserById(userID);
-
-                return Ok(user);
+                var userMovies = _rateService.GetRatingsForUser(userId);
+                return Ok(userMovies);
             }
             catch (Exception)
             {
-                return Unauthorized(new
-                {
-                    message = "Te falta autorização"
-                });
+                return Unauthorized(new { message = "Authorization failed!" });
             }
         }
+
+        [HttpPost("register")]
+        public IActionResult Register([FromBody] UserRegisterDTO registrationDTO)
+        {
+            try
+            {
+                if (_userRepository.GetUserByEmail(registrationDTO.Email) != null)
+                {
+                    return Conflict(new { message = "The user is already registered." });
+                }
+
+                var newUser = new User
+                {
+                    Email = registrationDTO.Email,
+                    Password = registrationDTO.Password,
+                };
+                _userRepository.Create(newUser);
+
+                return Ok(new { message = "User registered successfully!" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"ops {ex.Message}" });
+            }
+        }
+
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] UserLoginDTO loginDTO)
+        {
+            try
+            {
+                var user = _userRepository.GetUserByEmail(loginDTO.Email);
+
+                if (user == null || user.Password != loginDTO.Password)
+                {
+                    return Unauthorized(new { message = "Invalid Credentials." });
+                }
+
+                var token = _jwtService.Generate(user.Id);
+
+                var cookieOptions = new CookieOptions
+                {
+                    HttpOnly = true,
+                    SameSite = SameSiteMode.Strict,
+                    Secure = true
+                };
+
+                Response.Cookies.Append("jwt", token, cookieOptions);
+
+                return Ok(new { user, message = "sucess!" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"ops {ex.Message}" });
+            }
+        }
+
 
         [HttpPost("logout")]
         public IActionResult Logout()
         {
             Response.Cookies.Delete("jwt");
-
-            return Ok(new
-            {
-                message = "Saiu de boa"
-            });
+            return Ok(new { message = "Logged out successfully!" });
         }
+
+        [HttpDelete("user/{id}")]
+        public IActionResult DeleteUser(int id)
+        {
+            try
+            {
+                var user = _userRepository.GetUserById(id);
+
+                if (user == null)
+                {
+                    return NotFound(new { message = "User not found." });
+                }
+                _userRepository.DeleteUser(id);
+
+                return Ok(new { message = "User deleted successfully." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"ops {ex.Message}" });
+            }
+        }
+
     }
 }

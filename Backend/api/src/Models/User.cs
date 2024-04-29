@@ -12,6 +12,5 @@ namespace src.Models
         public string PhoneNumber { get; set; }
         public string Photo { get; set; }
         public virtual ICollection<Movie> Movie { get; set; }
-
     }
 }

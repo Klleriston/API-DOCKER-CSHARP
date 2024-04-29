@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/klleriston/Dev/MovieNet-/Backend/api/src/src.csproj": {}
+    "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj": {}
   },
   "projects": {
-    "/home/klleriston/Dev/MovieNet-/Backend/api/src/src.csproj": {
+    "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/klleriston/Dev/MovieNet-/Backend/api/src/src.csproj",
+        "projectUniqueName": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj",
         "projectName": "src",
-        "projectPath": "/home/klleriston/Dev/MovieNet-/Backend/api/src/src.csproj",
-        "packagesPath": "/home/klleriston/.nuget/packages/",
-        "outputPath": "/home/klleriston/Dev/MovieNet-/Backend/api/src/obj/",
+        "projectPath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj",
+        "packagesPath": "C:\\Users\\klleriston_calriz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/klleriston/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\klleriston_calriz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "net8.0": {
@@ -100,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -6,6 +6,6 @@
         public string Title { get; set; }
         public string Description { get; set; }
         public int Year { get; set; }
-        public virtual User User { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

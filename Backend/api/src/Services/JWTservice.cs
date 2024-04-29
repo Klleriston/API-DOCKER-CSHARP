@@ -6,12 +6,18 @@ namespace src.Services
 {
     public class JWTservice
     {
-        private string secretKey = "This is my long string for generete a JWT token";
+        private readonly string _secretKey;
+
+        public JWTservice(string secretKey)
+        {
+            _secretKey = secretKey;
+        }
+
         public string Generate(int id)
         {
-            var symetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
-            var credencial = new SigningCredentials(symetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
-            var header = new JwtHeader(credencial);
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secretKey));
+            var credentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
+            var header = new JwtHeader(credentials);
 
             var payload = new JwtPayload(id.ToString(), null, null, null, DateTime.UtcNow.AddHours(1));
 
@@ -23,7 +29,7 @@ namespace src.Services
         public JwtSecurityToken Verify(string jwt)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes(secretKey);
+            var key = Encoding.UTF8.GetBytes(_secretKey);
             tokenHandler.ValidateToken(jwt, new TokenValidationParameters
             {
                 IssuerSigningKey = new SymmetricSecurityKey(key),

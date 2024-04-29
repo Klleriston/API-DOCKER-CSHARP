@@ -9,6 +9,7 @@ namespace src.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Rate> Rates{ get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
