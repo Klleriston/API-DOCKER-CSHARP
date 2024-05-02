@@ -5,13 +5,9 @@
 ## Tecnologias utiliadas:
 - Backend -> ASP .NET 8.0
 - Database -> PostgreSQL
-- FrontEnd -> Angular
 - Deploy -> GCP
 - Organização e planejamento -> Trello
 
-## Esquema do projeto no periodo atual:
-
- ![Esquema](Assets/Trello-PT3.png)
 ## Link do deploy:
 - OFF 😢
 
