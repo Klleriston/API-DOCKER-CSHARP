@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj": {}
+    "C:\\Users\\klleriston_calriz\\Dev\\MovieNet\\Backend\\api\\src\\src.csproj": {}
   },
   "projects": {
-    "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj": {
+    "C:\\Users\\klleriston_calriz\\Dev\\MovieNet\\Backend\\api\\src\\src.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj",
+        "projectUniqueName": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet\\Backend\\api\\src\\src.csproj",
         "projectName": "src",
-        "projectPath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj",
+        "projectPath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet\\Backend\\api\\src\\src.csproj",
         "packagesPath": "C:\\Users\\klleriston_calriz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\obj\\",
+        "outputPath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet\\Backend\\api\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\klleriston_calriz\\AppData\\Roaming\\NuGet\\NuGet.Config"

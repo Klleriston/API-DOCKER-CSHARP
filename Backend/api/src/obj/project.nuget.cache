@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ue0EedqX+Mk9g58KqeXtY/PwCP3/S/7Xxx6Ecu+enE+SxaDWYQjxs5vEXJhWcfdM4qLm10H8zx7F1wiJ11fA2Q==",
+  "dgSpecHash": "fuXQv3tllaeH2ezhSM6LvrF0S+oxR9ElU3jReOuweRNsEf4AL2mc/eUDKuMz+iEm6BPnMH7OlbHWOlXzsSzx4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet-\\Backend\\api\\src\\src.csproj",
+  "projectFilePath": "C:\\Users\\klleriston_calriz\\Dev\\MovieNet\\Backend\\api\\src\\src.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\klleriston_calriz\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\klleriston_calriz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -143,7 +143,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.Cors 5.3.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net8.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "Package 'Microsoft.AspNet.Cors 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Cors",
       "targetGraphs": [
         "net8.0"
