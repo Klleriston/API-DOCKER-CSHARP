@@ -36,6 +36,9 @@ app.UseCors(o => o
 
 app.UseAuthorization();
 
+var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<MovieNetContext>();
+context.Database.Migrate();
+
 app.MapControllers();
 
 app.Run();
