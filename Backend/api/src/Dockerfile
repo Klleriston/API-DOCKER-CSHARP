@@ -16,6 +16,7 @@ RUN dotnet ef database update
 
 RUN dotnet build "src.csproj" -c $configuration -o /app/build
 
+
 FROM build AS publish
 ARG configuration=Release
 RUN dotnet publish "src.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
