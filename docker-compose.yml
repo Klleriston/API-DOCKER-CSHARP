@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.5'
 
 services:
   postgres:
@@ -13,7 +13,7 @@ services:
       - movieNetNetwork
 
   backend-movie-net:
-    image: klleriston/backend-movie-net:1.0
+    image: klleriston/backend-movie-net:1.1    
     ports:
       - 8081:8081
     depends_on:
